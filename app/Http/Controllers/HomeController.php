@@ -21,4 +21,16 @@ class HomeController extends Controller{
         return json_encode($response);
     }
 
+    public function getCurrentData(){
+        $response = array();
+
+        $date = new \DateTime();
+
+        $response['currentDate'] = $date->format('Y-m-d H:i');
+        $response['Msg'] = "routing is working";
+
+        return json_encode($response);
+
+    }
+
 }

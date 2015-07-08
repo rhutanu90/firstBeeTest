@@ -13,6 +13,8 @@
 
 Route::get('/','HomeController@returnHelloWorld');
 
+Route::get('date', "HomeController@getCurrentData");
+
 Route::get("welcome", function () {
   //  return view('welcome');
 });
