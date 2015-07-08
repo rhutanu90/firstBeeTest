@@ -52,14 +52,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HomeController.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="HomeController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="24" selection-start="309" selection-end="309" vertical-scroll-proportion="0.38636363" vertical-offset="0" max-vertical-offset="792">
+            <state line="18" column="24" selection-start="309" selection-end="309" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="510">
               <folding>
                 <element signature="e#6#86#0" expanded="true" />
                 <element signature="e#121#134#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.config" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/web.config">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="16" selection-start="878" selection-end="878" vertical-scroll-proportion="0.45833334" vertical-offset="0" max-vertical-offset="816">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -77,6 +86,7 @@
         <option value="$PROJECT_DIR$/config/app.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
+        <option value="$PROJECT_DIR$/public/web.config" />
       </list>
     </option>
   </component>
@@ -317,11 +327,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="24" selection-start="309" selection-end="309" vertical-scroll-proportion="0.38636363" vertical-offset="0" max-vertical-offset="792">
+        <state line="18" column="24" selection-start="309" selection-end="309" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="510">
           <folding>
             <element signature="e#6#86#0" expanded="true" />
             <element signature="e#121#134#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/web.config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="16" selection-start="878" selection-end="878" vertical-scroll-proportion="0.45833334" vertical-offset="0" max-vertical-offset="493">
+          <folding />
         </state>
       </provider>
     </entry>
