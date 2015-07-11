@@ -19,9 +19,17 @@ class HomeController extends Controller{
 
         $response['Msg'] = "Hello Robert";
 
-        if(DB::connection()->getDatabaseName())
-        {
-            $response['dbname'] = DB::connection()->getDatabaseName();
+        $server = "tcp:k67fbb5wd8.database.windows.net,1433";
+        $user = "beeboardUser@k67fbb5wd8";
+        $pwd = "Robert$123";
+        $db = "demoBeeBoard_DB";
+
+        try{
+            $conn = new PDO( "sqlsrv:Server= $server ; Database = $db ", $user, $pwd);
+            $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+        }
+        catch(Exception $e){
+            die(print_r($e));
         }
 
         return json_encode($response);
