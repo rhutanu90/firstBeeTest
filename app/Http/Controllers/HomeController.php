@@ -9,6 +9,7 @@
 namespace App\Http\Controllers;
 
 use App\User;
+use DB;
 use App\Http\Controllers\Controller;
 
 class HomeController extends Controller{
@@ -17,6 +18,11 @@ class HomeController extends Controller{
         $response = array();
 
         $response['Msg'] = "Hello Robert";
+
+        if(DB::connection()->getDatabaseName())
+        {
+            $response['dbname'] = DB::connection()->getDatabaseName();
+        }
 
         return json_encode($response);
     }

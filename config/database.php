@@ -44,6 +44,16 @@ return [
     |
     */
 
+    //user beeboardUser
+    //pass: Robert$12
+    //db; demoBeeBoard_ID
+
+
+    /*
+     Server: k67fbb5wd8.database.windows.net,1433 \r\nSQL Database: demoBeeBoard_DB\r\nUser Name: beeboardUser\r\n\r\nPHP Data Objects(PDO) Sample Code:\r\n\r\ntry {\r\n   $conn = new PDO ( \"sqlsrv:server = tcp:k67fbb5wd8.database.windows.net,1433; Database = demoBeeBoard_DB\", \"beeboardUser\", \"{your_password_here}\");\r\n    $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );\r\n}\r\ncatch ( PDOException $e ) {\r\n   print( \"Error connecting to SQL Server.\" );\r\n   die(print_r($e));\r\n}\r\n\rSQL Server Extension Sample Code:\r\n\r\n$connectionInfo = array(\"UID\" => \"beeboardUser@k67fbb5wd8\", \"pwd\" => \"{your_password_here}\", \"Database\" => \"demoBeeBoard_DB\", \"LoginTimeout\" => 30, \"Encrypt\" => 1);\r\n$serverName = \"tcp:k67fbb5wd8.database.windows.net,1433\";\r\n$conn = sqlsrv_connect($serverName, $connectionInfo);
+     */
+
+
     'connections' => [
 
         'sqlite' => [
@@ -53,15 +63,15 @@ return [
         ],
 
         'mysql' => [
-            'driver'    => 'mysql',
-            'host'      => env('DB_HOST', 'localhost'),
-            'database'  => env('DB_DATABASE', 'forge'),
-            'username'  => env('DB_USERNAME', 'forge'),
-            'password'  => env('DB_PASSWORD', ''),
+            'driver'    => 'sqlsrv',
+            'host'      => env('DB_HOST', 'tcp:k67fbb5wd8.database.windows.net,1433'),
+            'database'  => env('DB_DATABASE', 'demoBeeBoard_DB'),
+            'username'  => env('DB_USERNAME', 'beeboardUser@k67fbb5wd8'),
+            'password'  => env('DB_PASSWORD', 'Robert$123'),
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',
-            'strict'    => false,
+        //    'strict'    => false,
         ],
 
         'pgsql' => [
