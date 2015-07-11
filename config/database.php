@@ -26,7 +26,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'sqlsrv'),
+    'default' => env('DB_CONNECTION', 'azure'),
 
     /*
     |--------------------------------------------------------------------------
@@ -81,6 +81,16 @@ return [
             'password' => env('DB_PASSWORD', 'Robert$123'),
             'charset'  => 'utf8',
             'prefix'   => '',
+        ],
+
+        'azure' => [
+            'driver'    => 'sqlsrv',
+            'host'      => 'k67fbb5wd8.database.windows.net,1433',
+            'database'  => 'demoBeeBoard_DB',
+            'username'  => 'beeboardUser@k67fbb5wd8',
+            'password'  => 'Robert$123',
+            'prefix'    => '',
+
         ],
 
     ],

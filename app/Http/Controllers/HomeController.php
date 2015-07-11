@@ -25,6 +25,16 @@ class HomeController extends Controller{
        // die(phpinfo());
         $response['Msg'] = "Hello Robert";
 
+        try {
+            if(DB::connection()->getDatabaseName())
+            {
+                $response['Rares'] = "conncted sucessfully to database ".DB::connection()->getDatabaseName();
+            }
+        }
+        catch(Exception $e) {
+            $response['tata'] = 'Message: ' .$e->getMessage();
+        }
+
         return json_encode($response);
     }
 

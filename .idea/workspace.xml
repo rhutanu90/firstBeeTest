@@ -50,19 +50,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="database.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="database.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/database.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="5" selection-start="3784" selection-end="3784" vertical-scroll-proportion="0.9388489" vertical-offset="1025" max-vertical-offset="2210">
+            <state line="28" column="44" selection-start="970" selection-end="970" vertical-scroll-proportion="-6.5384617" vertical-offset="306" max-vertical-offset="2380">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HomeController.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="HomeController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="42" selection-start="430" selection-end="430" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="714">
+            <state line="33" column="29" selection-start="675" selection-end="675" vertical-scroll-proportion="0.7768014" vertical-offset="0" max-vertical-offset="884">
               <folding />
             </state>
           </provider>
@@ -99,8 +99,8 @@
         <option value="$PROJECT_DIR$/config/app.php" />
         <option value="$PROJECT_DIR$/public/web.config" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/config/database.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
       </list>
     </option>
   </component>
@@ -367,16 +367,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
+    <entry file="file://$PROJECT_DIR$/config/database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="42" selection-start="430" selection-end="430" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="714">
+        <state line="28" column="44" selection-start="970" selection-end="970" vertical-scroll-proportion="-6.5384617" vertical-offset="306" max-vertical-offset="2380">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="5" selection-start="3784" selection-end="3784" vertical-scroll-proportion="0.9388489" vertical-offset="1025" max-vertical-offset="2210">
+        <state line="33" column="29" selection-start="675" selection-end="675" vertical-scroll-proportion="0.7768014" vertical-offset="0" max-vertical-offset="884">
           <folding />
         </state>
       </provider>
