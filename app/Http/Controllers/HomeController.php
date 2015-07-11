@@ -29,7 +29,7 @@ class HomeController extends Controller{
             $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
         }
         catch(Exception $e){
-            die(print_r($e));
+            $response['Msg2'] = print_r($e);
         }
 
         return json_encode($response);
