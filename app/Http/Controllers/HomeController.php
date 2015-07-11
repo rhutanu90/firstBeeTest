@@ -14,24 +14,16 @@ use App\Http\Controllers\Controller;
 
 class HomeController extends Controller{
 
+    public function returnPHPInfo(){
+        die(phpinfo());
+    }
+
+
     public function returnHelloWorld(){
         $response = array();
 
        // die(phpinfo());
         $response['Msg'] = "Hello Robert";
-
-        $server = 'tcp:k67fbb5wd8.database.windows.net';
-        $user = 'beeboardUser@k67fbb5wd8';
-        $pwd = 'Robert$123';
-        $db = 'demoBeeBoard_DB';
-
-        try{
-            $conn = new PDO( "sqlsrv:Server= $server ; Database = $db ", $user, $pwd);
-            $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
-        }
-        catch(Exception $e){
-            $response['MSG2'] = print_r($e);
-        }
 
         return json_encode($response);
     }

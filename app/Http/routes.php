@@ -19,5 +19,6 @@ Route::get("welcome", function () {
   //  return view('welcome');
 });
 
+Route::get('phpinfo', "HomeController@returnPHPInfo");
 
 Route::get('home/returnHelloWorld','HomeController@returnHelloWorld');
