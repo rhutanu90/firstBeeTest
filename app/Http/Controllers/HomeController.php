@@ -24,13 +24,7 @@ class HomeController extends Controller{
         $pwd = "Robert$123";
         $db = "demoBeeBoard_DB";
 
-        try{
-            $conn = new PDO( "sqlsrv:Server= $server ; Database = $db ", $user, $pwd);
-            $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
-        }
-        catch(Exception $e){
-            $response['Msg2'] = print_r($e);
-        }
+        
 
         return json_encode($response);
     }

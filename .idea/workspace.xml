@@ -62,7 +62,7 @@
       <file leaf-file-name="HomeController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="43" selection-start="765" selection-end="765" vertical-scroll-proportion="0.7768014" vertical-offset="0" max-vertical-offset="867">
+            <state line="26" column="8" selection-start="513" selection-end="513" vertical-scroll-proportion="0.6274165" vertical-offset="0" max-vertical-offset="765">
               <folding>
                 <element signature="e#121#134#0" expanded="true" />
               </folding>
@@ -477,7 +477,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="43" selection-start="765" selection-end="765" vertical-scroll-proportion="0.7768014" vertical-offset="0" max-vertical-offset="867">
+        <state line="26" column="8" selection-start="513" selection-end="513" vertical-scroll-proportion="0.6274165" vertical-offset="0" max-vertical-offset="765">
           <folding>
             <element signature="e#121#134#0" expanded="true" />
           </folding>
