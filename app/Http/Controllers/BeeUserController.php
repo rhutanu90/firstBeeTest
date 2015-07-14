@@ -7,10 +7,22 @@ use Symfony\Component\HttpFoundation\Response;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\ApiController;
 use App\BeeUser;
 
-class BeeUserController extends Controller
+class BeeUserController extends ApiController
 {
+
+    protected $beeUser;
+
+
+    function __construct(BeeUser $beeUser){
+        $this->beeUser = $beeUser;
+
+        $this->middleware('auth.basic', ['only' => 'store']);
+    }
+
+
     /**
      * Display a listing of the resource.
      *
@@ -19,10 +31,9 @@ class BeeUserController extends Controller
     public function index()
     {
         $users = BeeUser::all();
-        return response()->json([
-            'status' => true,
+        return $this->respond([
             'data' => $this->transformCollectionForReturn($users)
-        ], 200);
+        ]);
     }
 
     /**
@@ -42,7 +53,7 @@ class BeeUserController extends Controller
      */
     public function store()
     {
-        //
+        return 'store';
     }
 
     /**
@@ -56,18 +67,10 @@ class BeeUserController extends Controller
         $selectedUser = BeeUser::find($id);
 
         if(!$selectedUser){
-            return response()->json([
-                'status' => false,
-                'error' => [
-                    'message' => 'Selected User(id: '.$id.') does not exist.'
-                ]
-            ], 404);
+            return $this->respondNotFound('Selected User(id: '.$id.') does not exist.');
         }
 
-        return response()->json([
-            'status' => true,
-            'data' =>   $this->transformForReturn($selectedUser)
-        ], 200);
+        return $this->respond([ 'data' =>   $this->transformForReturn($selectedUser) ]);
     }
 
     /**

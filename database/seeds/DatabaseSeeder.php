@@ -18,6 +18,7 @@ class DatabaseSeeder extends Seeder
         BeeUser::truncate();
 
         $this->call(BeeUserTableSeeder::class);
+        $this->call(APIUSERSSeeder::class);
         // $this->call(UserTableSeeder::class);
 
         Model::reguard();

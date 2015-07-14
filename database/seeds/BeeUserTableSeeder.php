@@ -14,6 +14,7 @@ class BeeUserTableSeeder extends Seeder
     public function run()
     {
 
+        BeeUser::truncate();
         $faker = Faker::create();
 
         foreach(range(1, 30) as $index){

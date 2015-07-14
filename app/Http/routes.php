@@ -17,7 +17,9 @@ Route::group(['prefix' => 'api'], function() {
 });
 
 
-
+Route::get('csrf', function() {
+    return Session::token();
+});
 
 
 Route::get('/','HomeController@returnHelloWorld');
