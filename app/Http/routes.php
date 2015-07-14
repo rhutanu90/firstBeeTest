@@ -11,6 +11,15 @@
 |
 */
 
+
+Route::group(['prefix' => 'api'], function() {
+    Route::resource('beeUsers', 'BeeUserController');
+});
+
+
+
+
+
 Route::get('/','HomeController@returnHelloWorld');
 
 Route::get('date', "HomeController@getCurrentData");

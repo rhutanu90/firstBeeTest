@@ -22,7 +22,6 @@ class HomeController extends Controller{
     public function returnHelloWorld(){
         $response = array();
 
-       // die(phpinfo());
         $response['Msg'] = "Hello Robert";
 
         try {
